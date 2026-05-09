@@ -1,0 +1,112 @@
+/* promo.css */
+
+.promo-flex {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.promo-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 250px;
+    transition: transform 0.3s;
+    border-left: 5px solid #e67e22;
+}
+
+.promo-card:hover {
+    transform: translateY(-5px);
+}
+
+.promo-tag {
+    display: inline-block;
+    background-color: #e67e22;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    margin-bottom: 15px;
+}
+
+.promo-price {
+    font-size: 1.8em;
+    color: #e67e22;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.promo-oldprice {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.9em;
+    margin-right: 10px;
+}
+
+.promo-code {
+    background-color: #f0f0f0;
+    padding: 8px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.conditions {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 15px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.conditions li {
+    margin: 5px 0;
+}
+
+.promo-badge {
+    background-color: #1e2a3a;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 0.7em;
+    display: inline-block;
+}
+
+.promo-benefits {
+    margin-top: 40px;
+    background-color: #1e2a3a;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.promo-benefits h3 {
+    color: #e67e22;
+}
+
+.promo-benefits-inner {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.promo-benefits-inner > div {
+    flex: 1;
+}
+
+.promo-cta {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.promo-footer-note {
+    margin-top: 15px;
+    font-size: 0.9em;
+}

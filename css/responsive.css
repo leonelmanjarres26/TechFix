@@ -1,0 +1,109 @@
+/* responsive.css */
+
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .social-links {
+        gap: 10px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    .hero-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .benefit-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .testimonial-grid,
+    .contact-info-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        min-width: 100%;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px 0;
+    }
+
+    .header-top {
+        padding: 0 10px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .social-links a {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero-cards,
+    .benefit-grid,
+    .stats,
+    .testimonial-grid,
+    .contact-info-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero {
+        padding-top: 25px;
+    }
+
+    .benefits h2 {
+        font-size: 1.65rem;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px 16px;
+    }
+}

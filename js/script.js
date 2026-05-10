@@ -71,3 +71,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Menú hamburguesa
+const menuToggle = document.getElementById('menuToggle');
+const menuList = document.getElementById('menuList');
+
+menuToggle.addEventListener('click', function() {
+    menuList.classList.toggle('show');
+    
+    // Cambia el ícono
+    if (menuList.classList.contains('show')) {
+        menuToggle.textContent = '✕';
+    } else {
+        menuToggle.textContent = '☰';
+    }
+});
+
